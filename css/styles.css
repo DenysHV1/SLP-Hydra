@@ -198,8 +198,8 @@ max-width: 150%;
 	margin-top: 103px;
 	border-radius: 90px;
 	box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
-	background: rgba(0, 0, 0, 0.5); /* ??????? */
-padding: 3px 80px 3px 39px;
+	background-image: radial-gradient(rgb(51, 45, 67),rgb(26, 24, 40) ); /
+	padding: 3px 80px 3px 39px;
 
 }
 
