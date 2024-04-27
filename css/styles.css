@@ -1,0 +1,255 @@
+/* \\\\\\\\\\\Общие стили\\\\\\\\\\\ */
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: #302c42;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1272px;
+}
+
+dd,dt {
+	margin: 0;
+}
+/* \\\\\\\\\\\Общие стили\\\\\\\\\\\ */
+
+/* ~~~~~~~~~~hydra-nav~~~~~~~~ */
+.hydra-header{
+	margin-top: 50px;
+	margin-bottom: 90px;
+	overflow-x: clip;
+}
+
+.hydra-nav {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+/* logo */
+.hydra-logo {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	max-width: 183px;
+}
+/* logo */
+
+/* Navigation */
+.hydra-nav-inner {
+	display: flex;
+	align-items: center;
+	gap: 41px;
+}
+
+.nav-item__href{
+font-weight: 700;
+font-size: 12px;
+color: #fff;
+}
+/* Navigation */
+
+
+/* Buttons */
+.hydra-nav-buttons{
+	display: flex;
+	align-items: center;
+	gap: 38px;
+}
+
+.hydra-nav-button1 {
+border: 2px solid #fff;
+border-radius: 40px;
+padding: 17px 34px;
+}
+
+.hydra-nav-button {
+	border: 2px solid #fff;
+	border-radius: 40px;
+	padding: 17px 34px;
+	background: linear-gradient(90deg, grey, white);
+}
+
+.hydra-nav-button__href1 {
+	font-weight: 700;
+	font-size: 12px;
+	color: #fff;
+}
+
+
+.hydra-nav-button__href {
+	font-weight: 700;
+	font-size: 12px;
+	color: #343045;
+}
+/* Buttons */
+
+/* ~~~~~~~~~~hydra-nav~~~~~~~~ */
+
+
+/* ~~~~~~~~~~header-bottom~~~~~~~~~ */
+
+/* /////////header-bottom-left//////// */
+.header-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+}
+
+.header-bottom-left{
+display: flex;
+flex-direction: column;
+align-items: start;
+}
+
+.hydra__title {
+font-weight: 700;
+font-size: 46px;
+background: linear-gradient(156deg, );
+color: #fff;
+max-width: 456px;
+}
+
+.h1-span {
+	background: linear-gradient(156deg, grey, white );/*  ????? */
+	background-clip: text;
+}
+
+.header-bottom-left__text {
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	max-width: 450px;
+}
+
+.bottom-batton {
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	cursor: pointer;
+}
+
+.header-left__button{
+	border-radius: 40px;
+	padding: 16px 40px;
+	background: linear-gradient(90deg, grey, white);
+font-weight: 700;
+font-size: 12px;
+color: #343045;
+}
+/* /////////header-bottom-left//////// */
+
+/* /////////header-bottom-right//////// */
+
+.header-bottom-right {
+	width: 490px;
+	position: relative;
+
+}
+
+.header-bottom-right__img {
+position: absolute;
+max-width: 100%;
+z-index: 10;
+}
+
+.vector1 {
+position: absolute;
+right: -158px;
+top: -81px;
+max-width: 100%;
+
+
+}
+
+.vector2 {
+position: absolute;
+right: 42px;
+top: -227px;
+transform: rotate(-6deg);
+max-width: 100%;
+
+}
+
+.vector3 {
+position: absolute;
+right: -141px;
+top: 164px;
+max-width: 150%;
+
+}
+
+/* /////////header-bottom-right//////// */
+
+.hydra-address {
+	display: flex;
+	gap: 50px;
+	align-items: center;
+	margin-top: 103px;
+	border-radius: 90px;
+	box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
+	background: rgba(0, 0, 0, 0.5); /* ??????? */
+padding: 3px 80px 3px 39px;
+
+}
+
+.hydra-address-inner {
+	display: flex;
+	align-items: center;
+	
+	
+}
+
+.hydra-address-map-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-right: 2px solid rgba(192, 183, 232, 0.33);
+	padding-right: 42.5px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.hydra-address-map-list2 {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-right: 2px solid rgba(192, 183, 232, 0.33);
+	padding-right: 60px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.hydra-address-map-list1 {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+.address-map-list-item1 {
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+font-weight: 700;
+font-size: 24px;
+color: #fff;
+}
+
+.map-list-item2__href {
+	font-family: "Montserrat", sans-serif;
+text-decoration: none;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #fff;
+}
