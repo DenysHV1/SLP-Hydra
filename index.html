@@ -22,10 +22,10 @@
 			<nav class="hydra-nav">
 				<ul class="hydra-logo">
 					<li class="hidra-logo-item">
-						<a class="hydra-logo__href" href="./index.html"><img src="images/hydra-logo1.svg" alt="Hydra Logo"></a>
+						<a class="hydra-logo__href" href="./index.html"><img src="images/hydra-logo1.svg" alt="Hydra Logo" width="103"></a>
 					</li>
 					<li class="hidra-logo-item">
-						<a href="./index.html" class="hidra-logo__href"><img src="images/hydra-logo2.svg" alt="Hydra Logo"></a>
+						<a href="./index.html" class="hidra-logo__href"><img src="images/hydra-logo2.svg" alt="Hydra Logo" width="76"></a>
 					</li>
 				</ul>
 				<ul class="hydra-nav-inner">
@@ -43,14 +43,13 @@
 					</li>
 				</ul>
 				<ul class="hydra-nav-buttons">
-					<li class="hydra-nav-button1">
+					<li class="hydra-nav-button1 button-for-header">
 						<a href="" class="hydra-nav-button__href1">CONTACT US</a>
 					</li>
-					<li class="hydra-nav-button">
+					<li class="hydra-nav-button button-for-header">
 						<a href="" class="hydra-nav-button__href">JOIN HYDRA</a>
 					</li>
 				</ul>
-
 			</nav>
 			<div class="header-bottom">
 				<div class="header-bottom-left">
@@ -172,8 +171,10 @@
 		<section class="services">
 			<div class="container services-inner">
 				<h2 class="services__title--hiddeen">Services</h2>
+				<a class="services-button-left" href="#cart1"><img src="images/button-left.png"></a>
+				<a class="services-button-right" href="#cart4"><img src="images/button-right.png"></a>
 				<ul class="services-list">
-					<li class="services-list-cart">
+					<li class="services-list-cart" id="cart1">
 						<img src="images/services-img1.png" alt="SIMULATION" class="services-list-cart__img">
 						<h3 class="services__title">SIMULATION</h3>
 						<p class="services__text">Vitae sapien pellentesque habitant morbi
@@ -195,8 +196,6 @@
 							TRY IT NOW
 						</button>
 					</li>
-				</ul>
-				<ul class="services-list">
 					<li class="services-list-cart">
 						<img src="images/services-img3.png" alt="SELF-CARE" class="services-list-cart__img">
 						<h3 class="services__title">SELF-CARE</h3>
@@ -208,7 +207,7 @@
 							TRY IT NOW
 						</button>
 					</li>
-					<li class="services-list-cart">
+					<li class="services-list-cart" id="cart2">
 						<img src="images/services-img4.png" alt="OUTDOOR" class="services-list-cart__img">
 						<h3 class="services__title">OUTDOOR</h3>
 						<p class="services__text">Vitae sapien pellentesque habitant morbi
