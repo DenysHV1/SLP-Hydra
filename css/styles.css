@@ -90,20 +90,26 @@ img {
   fill: url(#paint0_linear_1_5);
   width: 103px;
   height: 103px;
+  transition-property: fill;
+  transition-timing-function: linear;
+  transition-duration: 300ms;
 }
 
 .header-logo1:hover {
-  fill: #2f00ff;
+  fill: #72c9ff;
 }
 
 .header-logo2 {
   fill: url(#paint0_linear_1_5);
   width: 76px;
   height: 46px;
+  transition-property: fill;
+  transition-timing-function: linear;
+  transition-duration: 300ms;
 }
 
 .header-logo2:hover {
-  fill: #2f00ff;
+  fill: #72c9ff;
 }
 
 /* список в навігації */
@@ -120,55 +126,101 @@ img {
   font-weight: 700;
   font-size: 12px;
   color: #fff;
+  transition-property: color, font-weight;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
 }
+
+.nav-item__href:hover {
+	color:#72c9ff;
+	font-weight: 900;
+}
+
 /* Navigation */
 
-/* Buttons */
+
+/* '''''''''''''''Buttons'''''''''''''' */
 .hydra-nav-buttons {
   display: flex;
   align-items: center;
   gap: 38px;
+  position: sticky;
+  top:0;
 }
 
-.hydra-nav-button1 {
-  border: 2px solid #fff;
-  border-radius: 40px;
-  padding: 17px 34px;
-  transition: background-image 0.5s linear;
-  cursor: pointer;
-}
-
-.hydra-nav-button1:hover {
-  background-image: linear-gradient(90deg, #685e8e 0%, #8e87ac 100%);
-}
-
-.hydra-nav-button {
-  border: 2px solid #fff;
-  border-radius: 40px;
-  padding: 17px 34px;
-  background-image: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
-  cursor: pointer;
-}
-
+/* //////додатковий селектор для розміру/////// */
 .button-for-header {
-  flex-shrink: 0;
-  width: calc((101% - 38px) / 2);
-}
+	flex-shrink: 0;
+	width: calc((102% - 38px) / 2);
+  }
 
-.hydra-nav-button__href1 {
-  font-weight: 700;
-  font-size: 12px;
-  color: #fff;
-}
+/* """""""""""""""""""перша кнопка""""""""""""""""""""" */
+.hydra-nav-button1 {
+	border: 2px solid #fff;
+	border-radius: 40px;
+	padding: 17px 34px;
+	cursor: pointer;
+	transition-property: background-image, padding;
+	transition-timing-function: linear;
+	transition-duration: 300ms; /* час */
+	  transition-delay: 0ms;     /* затримка */
+  }
+  
+  .hydra-nav-button1:hover {
+	  padding: 18px 35px;
+	  background-image: linear-gradient(90deg, #685e8e 0%, #8e87ac 100%);
+  }
+  
+  .hydra-nav-button__href1 {
+	font-weight: 700;
+	font-size: 12px;
+	color: #fff;
+	transition-property: color;
+	transition-timing-function: linear;
+	transition-duration: 200ms;
+  }
+  
+  .hydra-nav-button__href1:hover{
+	  color: #343045;
+  }
+  
+  
+  
+  /* """""""""""""""""""друга кнопка""""""""""""""""""""" */
+  .hydra-nav-button {
+	  border: 2px solid #fff;
+	  border-radius: 40px;
+	  padding: 17px 34px;
+	  cursor: pointer;
+	  transition-property: background-image, padding;
+	  transition-duration: 300ms;
+	  transition-timing-function: linear;
+	  transition-delay: 0ms;
+	}
+	
+	.hydra-nav-button:hover {
+		padding: 18px 35px;
+		background-image: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+	}
+  
+  .hydra-nav-button__href {
+	font-weight: 700;
+	font-size: 12px;
+	color: #fff;
+	transition-property: color;
+	transition-timing-function: linear;
+	transition-duration: 200ms;
+  }
+  
+  .hydra-nav-button__href:hover {
+	  color: #343045;
+  }
+  /* """""""""""""""""""друга кнопка""""""""""""""""""""" */
 
-.hydra-nav-button__href {
-  font-weight: 700;
-  font-size: 12px;
-  color: #343045;
-}
-/* Buttons */
+/* '''''''''''''''Buttons'''''''''''''' */
 
-/* ~~~~~~~~~~hydra-nav~~~~~~~~ */
+
+
 
 /* ~~~~~~~~~~header-bottom~~~~~~~~~ */
 
@@ -196,7 +248,7 @@ img {
 }
 
 .h1-span {
-  background: linear-gradient(156deg, grey, white); /*  ????? */
+  color: linear-gradient(156deg, grey, white); /*  ????? */
   background-clip: text;
 }
 
@@ -218,23 +270,36 @@ img {
 .header-left__button {
   border-radius: 40px;
   padding: 16px 40px;
-  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  background-image: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
   font-weight: 700;
   font-size: 12px;
   color: #343045;
   cursor: pointer;
+  transition-timing-function: linear;
+  transition-property: background-image;
+  transition-duration: 400ms;
+
 }
+
+.header-left__button:hover{
+	background-image: linear-gradient(90deg, #a594e6 0%, #e3ddfe 100%);
+}
+
 
 .arrow {
   width: 100px;
   height: 100px;
   stroke: #c0b7e8;
-  transition: padding 0.3s linear;
+  transition-property: padding, stroke, transform;
+  transition-timing-function:linear;
+  transition-duration: 600ms;
+  transition-delay: 0s;
 }
 
 .arrow:hover {
   padding-left: 10px;
-  stroke: #f25454;
+  stroke: #00a3f5;
+  transform: rotate(-180deg);
 }
 
 /* /////////header-bottom-left//////// */
@@ -264,11 +329,21 @@ img {
     rgb(33, 30, 46) 100%
   );
   padding: 3px 80px 3px 39px;
+  transition: background-image 300ms linear 0s;
 }
 
 .hydra-address-inner {
   display: flex;
   align-items: center;
+  gap: 5px;
+}
+
+.hydra-address:hover {
+	background-image: radial-gradient(
+    2900.76% 50.13% at 50% 53.89%,
+    rgb(54, 47, 86) 0%,
+    rgb(31, 26, 53) 100%
+  );
 }
 
 .hydra-address-map-list {
@@ -289,6 +364,7 @@ img {
   padding-right: 60px;
   padding-top: 24px;
   padding-bottom: 24px;
+  cursor: pointer;
 }
 
 .hydra-address-map-list1 {
