@@ -58,8 +58,8 @@ img {
   padding: 50px 0 90px 0;
   overflow-x: clip;
   width: 100%;
-  background-image: url(/images/Vector\ 1.svg), url(/images/Vector\ 2.svg),
-    url(/images/Vector\ 3.svg), url(/images/Vector\ 4.svg);
+  background-image: url(/images/Vector\ 1.png), url(/images/Vector\ 2.png),
+    url(/images/Vector\ 3.png), url(/images/Vector\ 4.png);
   background-size: auto, auto, auto, auto;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: 100% 50%, 84% 0%, 100% 65%, 0% 56%;
@@ -476,7 +476,7 @@ img {
 .hydra-about {
   padding-top: 69px;
   padding-bottom: 111px;
-  background-image: url(/images/Vector\ 8.svg), url(/images/Vector\ 7.svg);
+  background-image: url(/images/Vector\ 8.png), url(/images/Vector\ 7.png);
   background-repeat: no-repeat, no-repeat;
   background-size: contain, contain;
   background-position: 50% 68%, 50% 15%;
