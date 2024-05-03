@@ -214,6 +214,7 @@
               <a href="" class="hydra-nav-button__href">JOIN HYDRA</a>
             </li>
           </ul>
+		  <img class="burger-menu" src="images/Hamburger-Button.svg" alt="menu">
         </nav>
         <div class="header-bottom">
           <div class="header-bottom-left">
@@ -430,57 +431,152 @@
           </ul>
         </div>
       </section>
-	  <!-- form -->
-	  <section class="hydra-form">
-		<div class="container form-inner">
-			<h2 class="form__title">
-				JOIN HYDRA
-			</h2>
-			<img class="form-vector16" src="images/Vector 16.png">
-			<p class="form-top__text">
-				Let’s Build Your VR Experience
-			</p>
-			<form action="info/" method="post" enctype="multipart/form-data" name="hydra-main-form" class="main-form" autocomplete="on">
-				<input type="text" class="small-input" tabindex="1" placeholder="First Name" autofocus>
-				<input type="text" class="small-input" tabindex="2" placeholder="Last Name">
-				<input type="email" class="small-input" tabindex="3" placeholder="Email">
-				<input type="number" class="small-input" tabindex="4" placeholder="Phone Number">
-				<label class="label-subject" for="subject">
-					<span class="label__text"> Subject</span>
-					<input type="text" id="subject" class="form-subject" tabindex="5" placeholder="man/woman">
+      <!-- form -->
+      <section class="hydra-form">
+        <div class="container form-inner">
+          <h2 class="form__title">JOIN HYDRA</h2>
+          <img class="form-vector16" src="images/Vector 16.png" />
+          <p class="form-top__text">Let’s Build Your VR Experience</p>
+		  <!-- start -->
+          <form
+            action="info/"
+            method="post"
+            enctype="multipart/form-data"
+            name="hydra-main-form"
+            class="main-form"
+            autocomplete="on"
+          >
+		  <!-- 1 text-->
+            <label class="small-label">
+              <p class="small-label__text">First Name</p>
+              <input
+                type="text"
+                class="small-input"
+                tabindex="1"
+                placeholder="Denys"
+				value=""
+              />
+            </label>
+			<!-- 2 text-->
+            <label class="small-label">
+              <p class="small-label__text">Last Name</p>
+              <input
+                type="text"
+                class="small-input"
+                tabindex="2"
+                placeholder="Harkusha"
+				value=""
+              />
+            </label>
+			<!-- 3 email-->
+            <label class="small-label">
+              <p class="small-label__text">Email</p>
+              <input
+                type="email"
+                class="small-input"
+                tabindex="3"
+                placeholder="yourmail@mail.com"
+				value=""
+              />
+            </label>
+			<!-- 4 tel-->
+            <label class="small-label">
+              <p class="small-label__text">Phone Number</p>
+              <input
+                type="tel"
+				name="contact_tel"
+                class="small-input"
+                tabindex="4"
+                placeholder="+380110000000"
+				value=""
+              />
+            </label>
+			<!-- 5 text-->
+			<div class="group-small-label1">
+				<label class="small-label1">
+					<p class="small-label__text1"> Subject</p>
+					<input
+						type="text"
+						name="subject"
+						id="subject"
+						class="small-input1"
+						tabindex="5"
+						placeholder="man/woman"
+						value=""
+					/>
 				</label>
-				<label class="label-subject" for="textarea">
-					<span class="label__text">How are you?</span>
-					<textarea rows="10" id="textarea" tabindex="6" class="form-textarea" placeholder="Tell Us Something..."></textarea>
-					<p class="select__text">How many points for our services?</p>
-					<select class="select" name="How many points for our services?">
-						<optgroup label="nooooo">
-							<option value="1">
-								&#x2605;
-							</option value="2">
-							<option>
-								&#x2605;&#x2605;
-							</option>
-							<optgroup label="why?">
-								<option value="3">
-									&#x2605;&#x2605;&#x2605;
-								</option>
-							</optgroup>
-						</optgroup>
-						<optgroup label="good">
-							<option value="4">
-								&#x2605;&#x2605;&#x2605;&#x2605;
-							</option>
-							<option selected value="5">
-								&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
-							</option>
-						</optgroup>
-					</select>
+				<!-- 6 number-->
+				<label class="small-label1">
+					<p class="small-label__text1"> Age</p>
+					<input
+					type="number"
+					name="age"
+					id="age"
+					class="small-input1"
+					tabindex="6"
+					placeholder="18"
+					min="6"
+					max="120"
+					value=""
+					/>
 				</label>
-				<button type="submit" class="form-button" tabindex="7">SEND TO HYDRA</button>
-			</form>
-		</div>
-	  </section>
+				<!-- 7 date-->
+				<label class="small-label1">
+					<p class="small-label__text1"> Birsday</p>
+					<input
+					type="date"
+					name="date"
+					id="date"
+					class="small-input-data"
+					tabindex="7"
+					value=""
+					/>
+				</label>
+			</div>
+			<!-- 6 textarea-->
+            <label class="label-textarea" for="textarea">
+              <p class="select__text">How are you?</p>
+              <textarea
+                rows="10"
+                id="textarea"
+                tabindex="8"
+                class="form-textarea"
+                placeholder="Tell Us Something..."
+              ></textarea>
+            </label>
+			<!-- 7 select -->
+			<label class="label-select">
+				<p class="select__text">How many points for our services?</p>
+				<select class="select" name="How many points for our services?">
+					<optgroup label="nooooo">
+						<option value="1">
+							&#x2605;
+						</option value="2">
+						<option>
+							&#x2605;&#x2605;
+						</option>
+					</optgroup>
+					<optgroup label="why?">
+						<option value="3">
+							&#x2605;&#x2605;&#x2605;
+						</option>
+					</optgroup>
+					<optgroup label="good">
+						<option value="4">
+							&#x2605;&#x2605;&#x2605;&#x2605;
+						</option>
+						<option selected value="5">
+							&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
+						</option>
+					</optgroup>
+				</select>
+			</label>
+            <button type="submit" class="form-button" tabindex="7">
+              SEND TO HYDRA
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
     <!-- ~~~~~~~~~~~~~~~~~Footer~~~~~~~~~~~~~~~~~~ -->
     <footer class="hydra-footer">

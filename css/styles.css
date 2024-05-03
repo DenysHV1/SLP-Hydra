@@ -50,9 +50,8 @@ img {
 }
 
 input {
-	font-family: inherit;
+  font-family: inherit;
 }
-
 
 /* \\\\\\\\\\\Общие стили\\\\\\\\\\\ */
 
@@ -63,10 +62,11 @@ input {
   padding: 50px 0 90px 0;
   overflow-x: clip;
   width: 100%;
-	background-image: url(../images/Vector\ 1.png), url(../images/Vector\ 2.png), url(../images/Vector\ 3.png), url(../images/Vector\ 4.png);
-	background-size: auto, auto, auto, auto;
-	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-	background-position: 100% 50%, 84% 0%, 100% 65%, 0% 56%;
+  background-image: url(../images/Vector\ 1.png), url(../images/Vector\ 2.png),
+    url(../images/Vector\ 3.png), url(../images/Vector\ 4.png);
+  background-size: auto, auto, auto, auto;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 100% 50%, 84% 0%, 100% 65%, 0% 56%;
 }
 
 /* весь контент в секції */
@@ -136,12 +136,11 @@ input {
 }
 
 .nav-item__href:hover {
-	color:#72c9ff;
-	font-weight: 900;
+  color: #72c9ff;
+  font-weight: 900;
 }
 
 /* Navigation */
-
 
 /* '''''''''''''''Buttons'''''''''''''' */
 .hydra-nav-buttons {
@@ -149,83 +148,78 @@ input {
   align-items: center;
   gap: 38px;
   position: sticky;
-  top:0;
+  top: 0;
 }
 
 /* //////додатковий селектор для розміру/////// */
 .button-for-header {
-	flex-shrink: 0;
-	width: calc((102% - 38px) / 2);
-  }
+  flex-shrink: 0;
+  width: calc((102% - 38px) / 2);
+}
 
 /* """""""""""""""""""перша кнопка""""""""""""""""""""" */
 .hydra-nav-button1 {
-	border: 2px solid #fff;
-	border-radius: 40px;
-	padding: 17px 34px;
-	cursor: pointer;
-	transition-property: background-image, transform;
-	transition-timing-function: linear;
-	transition-duration: 200ms; /* час */
-	  transition-delay: 0ms;     /* затримка */
-  }
-  
-  .hydra-nav-button1:hover {
-	  /* padding: 18px 35px; */
-	  background-image: linear-gradient(90deg, #685e8e 0%, #8e87ac 100%);
-	  transform: scale(1.1);
-  }
-  
-  .hydra-nav-button__href1 {
-	font-weight: 700;
-	font-size: 12px;
-	color: #fff;
-	transition-property: color;
-	transition-timing-function: linear;
-	transition-duration: 200ms;
-  }
-  
-  .hydra-nav-button__href1:hover{
-	  color: #343045;
-  }
-  
-  
-  
-  /* """""""""""""""""""друга кнопка""""""""""""""""""""" */
-  .hydra-nav-button {
-	  border: 2px solid #fff;
-	  border-radius: 40px;
-	  padding: 17px 34px;
-	  cursor: pointer;
-	  transition-property: background-image, transform;
-	  transition-duration: 200ms;
-	  transition-timing-function: linear;
-	  transition-delay: 0ms;
-	}
-	
-	.hydra-nav-button:hover {
-		transform: scale(1.1);
-		background-image: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
-	}
-  
-  .hydra-nav-button__href {
-	font-weight: 700;
-	font-size: 12px;
-	color: #fff;
-	transition-property: color;
-	transition-timing-function: linear;
-	transition-duration: 200ms;
-  }
-  
-  .hydra-nav-button__href:hover {
-	  color: #343045;
-  }
-  /* """""""""""""""""""друга кнопка""""""""""""""""""""" */
+  border: 2px solid #fff;
+  border-radius: 40px;
+  padding: 17px 34px;
+  cursor: pointer;
+  transition-property: background-image, transform;
+  transition-timing-function: linear;
+  transition-duration: 200ms; /* час */
+  transition-delay: 0ms; /* затримка */
+}
+
+.hydra-nav-button1:hover {
+  /* padding: 18px 35px; */
+  background-image: linear-gradient(90deg, #685e8e 0%, #8e87ac 100%);
+  transform: scale(1.1);
+}
+
+.hydra-nav-button__href1 {
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  transition-property: color;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+}
+
+.hydra-nav-button__href1:hover {
+  color: #343045;
+}
+
+/* """""""""""""""""""друга кнопка""""""""""""""""""""" */
+.hydra-nav-button {
+  border: 2px solid #fff;
+  border-radius: 40px;
+  padding: 17px 34px;
+  cursor: pointer;
+  transition-property: background-image, transform;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  transition-delay: 0ms;
+}
+
+.hydra-nav-button:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+}
+
+.hydra-nav-button__href {
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  transition-property: color;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+}
+
+.hydra-nav-button__href:hover {
+  color: #343045;
+}
+/* """""""""""""""""""друга кнопка""""""""""""""""""""" */
 
 /* '''''''''''''''Buttons'''''''''''''' */
-
-
-
 
 /* ~~~~~~~~~~header-bottom~~~~~~~~~ */
 
@@ -283,20 +277,18 @@ input {
   transition-timing-function: linear;
   transition-property: background-image;
   transition-duration: 400ms;
-
 }
 
-.header-left__button:hover{
-	background-image: linear-gradient(90deg, #a594e6 0%, #e3ddfe 100%);
+.header-left__button:hover {
+  background-image: linear-gradient(90deg, #a594e6 0%, #e3ddfe 100%);
 }
-
 
 .arrow {
   width: 100px;
   height: 100px;
   stroke: #c0b7e8;
   transition-property: padding, stroke, transform;
-  transition-timing-function:linear;
+  transition-timing-function: linear;
   transition-duration: 600ms;
   transition-delay: 0s;
 }
@@ -319,13 +311,11 @@ input {
   max-width: 100%;
   cursor: pointer;
   transition: transform 400ms linear 0s;
-
 }
 
 .header-bottom-right__img:active {
-transform: scale(1.3);
+  transform: scale(1.3);
 }
-
 
 /* /////////header-bottom-right//////// */
 
@@ -352,7 +342,7 @@ transform: scale(1.3);
 }
 
 .hydra-address:hover {
-	background-image: radial-gradient(
+  background-image: radial-gradient(
     2900.76% 50.13% at 50% 53.89%,
     rgb(54, 47, 86) 0%,
     rgb(31, 26, 53) 100%
@@ -408,10 +398,11 @@ transform: scale(1.3);
 /* <!-- ~~~~~~~~~~~~~~~~~Footer~~~~~~~~~~~~~~~~~~ --> */
 
 .hydra-footer {
-	background: url(../images/footer-line-baground2.png), url(../images/footer-line-baground1.png);
-	background-repeat: no-repeat, no-repeat;
-	background-position: 50% 28%, 50% -115%;
-	background-size: auto, auto;
+  background: url(../images/footer-line-baground2.png),
+    url(../images/footer-line-baground1.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 28%, 50% -115%;
+  background-size: auto, auto;
 }
 
 .hydra-footer-inner {
@@ -566,10 +557,10 @@ transform: scale(1.3);
 .hydra-about {
   padding-top: 69px;
   padding-bottom: 111px;
-	background-image: url(../images/Vector\ 8.png), url(../images/Vector\ 7.png);
-	background-repeat: no-repeat, no-repeat;
-	background-size: contain, contain;
-	background-position: 50% 68%, 50% 15%;
+  background-image: url(../images/Vector\ 8.png), url(../images/Vector\ 7.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: 50% 68%, 50% 15%;
 }
 .about-inner {
   display: flex;
@@ -583,8 +574,8 @@ transform: scale(1.3);
   transition: transform 300ms linear 0s;
 }
 
-.about__img:active{
-	transform:scale(1.25);
+.about__img:active {
+  transform: scale(1.25);
 }
 
 .about-inner-text {
@@ -666,7 +657,7 @@ transform: scale(1.3);
   border-radius: 40px;
   background-image: radial-gradient(rgb(51, 45, 67), rgb(26, 24, 40));
   padding: 37.44px 35px 40px 25px;
-  width: calc((100% - 33px) / 4);
+  min-width: 24%
 }
 
 .services-list-cart__img {
@@ -689,6 +680,7 @@ transform: scale(1.3);
   font-size: 12px;
   color: #fff;
   margin-bottom: 35px;
+  max-width: 200px;
 }
 
 .services__button {
@@ -729,201 +721,511 @@ transform: scale(1.3);
 }
 /* <!-- ///////////////services//////////////// --> */
 
-.hydra-form {
-	width: 100%;
+/* <!-- ///////////////FORM//////////////// --> */
 
-margin-top: 112px;
+/* верхня частина форми з заголовком і текстом */
+.hydra-form {
+  width: 100%;
+
+  margin-top: 112px;
 }
 
 .form-inner {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 100px;
-	padding: 90px 107px 84px 108px;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-background: radial-gradient(50% 50% at 50% 50%, rgb(64, 58, 95) 0%, rgb(33, 30, 46) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  padding: 90px 107px 84px 108px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(64, 58, 95) 0%,
+    rgb(33, 30, 46) 100%
+  );
 }
 
 .form__title {
-font-weight: 700;
-font-size: 36px;
-color: #fff;
-margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
-.form-vector16{
-	margin-bottom: 21px;
+.form-vector16 {
+  margin-bottom: 21px;
 }
 
 .form-top__text {
-font-weight: 300;
-font-size: 36px;
-color: #fff;
-margin-bottom: 65px;
-
+  font-weight: 300;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 65px;
 }
 
+/* налаштування всієї форми */
 .main-form {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	gap: 39px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 39px 10px;
 }
 
-input:placeholder-shown{
-	border: 2px solid #fff;
+input:placeholder-shown {
+  border: 2px solid #fff;
 }
 
-textarea:placeholder-shown{
-	border: 2px solid #fff;
+textarea:placeholder-shown {
+  border: 2px solid #fff;
 }
 
-.small-input{
-border: 2px solid #13ff17;
-border-radius: 40px;
-width: 43.5%;
-max-width: 43.5%;
-min-width: 220px;
-height: 72px;
-background-color: transparent;
-color: #fff;
-padding-left: 42px;
-padding-right: 42px;
-transition: border-color 150ms ease-in-out;
+/* налаштування перших 4-х інпутів */
+.small-label {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 43.5%;
+  max-width: 43.5%;
+  min-width: 220px;
+  gap: 10px;
+}
+
+.small-label__text {
+  padding-left: 42px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+.small-input {
+  border: 2px solid #13ff17;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 220px;
+  height: 72px;
+  background-color: transparent;
+  color: #fff;
+  padding-left: 42px;
+  padding-right: 42px;
+  transition: border-color 150ms ease-in-out;
 }
 
 .small-input::placeholder {
-	font-family: inherit;
-font-weight: 400;
-font-size: 14px;
-color: #fff;
-opacity: 0.5;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.small-input:hover {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(81, 74, 120) 0%,
+    rgb(50, 45, 69) 100%
+  );
+}
+
+.small-input:focus {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(81, 74, 120) 0%,
+    rgb(50, 45, 69) 100%
+  );
+}
+
+/* налаштування перших 4-х інпутів */
+
+
+
+/* налаштування групи малих інпутів */
+.group-small-label1{
+	display: flex;
+	align-items: center;
+	justify-content:start;
+	gap: 39px 10px;
+	width: 87.5%;
 }
 
 
-.small-input:hover{
-	background: radial-gradient(50% 50% at 50% 50%, rgb(81, 74, 120) 0%, rgb(50, 45, 69) 100%);
-}
-
-.small-input:focus{
-	background: radial-gradient(50% 50% at 50% 50%, rgb(81, 74, 120) 0%, rgb(50, 45, 69) 100%);
-}
-
-.form-subject {
-border: 2px solid #13ff17;
-border-radius: 40px;
-
-height: 72px;
-background-color: transparent;
-color: #fff;
-padding-left: 42px;
-padding-right: 42px;
-}
-
-.label-subject {
+.small-label1 {
 	display: flex;
 	flex-direction: column;
-width: 87.5%;
-min-width: 400px;
-max-width: 87.5%;
-gap: 10px;
-}
-
-.label__text{
-	padding-left: 42px;
-	font-weight: 400;
-font-size: 20px;
-color: #fff;
-}
-
-/* form:focus-within {
-	border-color: blue;
+	align-items: start;
+	width: 32.6%;
+	max-width: 43.5%;
+	min-width: 220px;
+	gap: 10px;
   }
-  ??????????????????????????????????????????
-  .label-subject:focus-within {
-	color: #2196f3;
-  } */
-
-
-.form-subject::placeholder {
-	font-family: inherit;
-font-weight: 400;
-font-size: 14px;
-color: #fff;
-opacity: 0.5;
-}
-
-.form-subject:hover{
-	background: radial-gradient(50% 50% at 50% 50%, rgb(81, 74, 120) 0%, rgb(50, 45, 69) 100%);
-}
-
-.form-subject:focus{
-	background: radial-gradient(50% 50% at 50% 50%, rgb(81, 74, 120) 0%, rgb(50, 45, 69) 100%);
-}
-
-.form-textarea {
-	border: 2px solid #13ff17;
-border-radius: 40px;
-height: 210px;
-background-color: transparent;
-color: #fff;
-padding-left: 42px;
-padding-right: 42px;
-padding-top: 27px;
-resize: none;
-}
-
-.form-textarea::placeholder {
-	font-family: inherit;
-font-weight: 400;
-font-size: 14px;
-color: #fff;
-opacity: 0.5;
-}
-
-.form-textarea:hover{
-	background: radial-gradient(50% 50% at 50% 50%, rgb(81, 74, 120) 0%, rgb(50, 45, 69) 100%);
-}
-
-.form-textarea:focus{
-	background: radial-gradient(50% 50% at 50% 50%, rgb(81, 74, 120) 0%, rgb(50, 45, 69) 100%);
-}
-
-.form-button {
-	border-radius: 40px;
-width: 214px;
-height: 48px;
-background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
-font-weight: 700;
-font-size: 12px;
-color: #343045;
-cursor: pointer;
-}
-
-.form-button:focus {
-	background: linear-gradient(90deg, #9488c3 0%, #d5cdf8 100%);
-}
-
-.form-button:hover {
-	background: linear-gradient(90deg, #9488c3 0%, #d5cdf8 100%);
-}
-
-.select{
-	width: 100px;
-	color: #ffffff;
-	background-color: #322d45;
-	border-radius: 10px;
-	margin-left: 42px;
-	padding: 4px;
-	border: 1px solid #322d45;
-}
-
-.select__text {
+  
+  .small-label__text1 {
+	padding-left: 42px;
 	font-weight: 400;
 	font-size: 20px;
 	color: #fff;
+  }
+  
+  .small-input1 {
+	border: 2px solid #13ff17;
+	border-radius: 40px;
+	width: 100%;
+	max-width: 100%;
+	min-width: 10%;
+	height: 72px;
+	background-color: transparent;
+	color: #fff;
 	padding-left: 42px;
+	padding-right: 42px;
+	transition: border-color 150ms ease-in-out;
+  }
+
+  .small-input-data {
+	border: 2px solid #fff;
+	border-radius: 40px;
+	width: 100%;
+	max-width: 100%;
+	min-width: 220px;
+	height: 72px;
+	background-color: transparent;
+	color: #fff;
+	padding-left: 42px;
+	padding-right: 42px;
+	transition: border-color 150ms ease-in-out;
+	cursor: pointer;
+  }
+
+
+  
+  .small-input1::placeholder {
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 14px;
+	color: #fff;
+	opacity: 0.5;
+  }
+  
+  .small-input1 .small-input-data:hover {
+	background: radial-gradient(
+	  50% 50% at 50% 50%,
+	  rgb(81, 74, 120) 0%,
+	  rgb(50, 45, 69) 100%
+	);
+  }
+  
+  .small-input1 .small-input-data:focus {
+	background: radial-gradient(
+	  50% 50% at 50% 50%,
+	  rgb(81, 74, 120) 0%,
+	  rgb(50, 45, 69) 100%
+	);
+  }
+
+
+
+
+
+/* налаштування текстового поля */
+
+.label-textarea {
+	display: flex;
+	flex-direction: column;
+	width: 87.5%;
+	min-width: 400px;
+	max-width: 87.5%;
+	gap: 10px;
+  }
+
+.form-textarea {
+  border: 2px solid #13ff17;
+  border-radius: 40px;
+  height: 210px;
+  background-color: transparent;
+  color: #fff;
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-top: 27px;
+  resize: none;
+}
+
+.form-textarea::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.form-textarea:hover {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(81, 74, 120) 0%,
+    rgb(50, 45, 69) 100%
+  );
+}
+
+.form-textarea:focus {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(81, 74, 120) 0%,
+    rgb(50, 45, 69) 100%
+  );
+}
+
+/* налаштування кнопки */
+.form-button {
+  border-radius: 40px;
+  width: 214px;
+  height: 48px;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  font-weight: 700;
+  font-size: 12px;
+  color: #343045;
+  cursor: pointer;
+}
+
+.form-button:focus {
+  background: linear-gradient(90deg, #9488c3 0%, #d5cdf8 100%);
+}
+
+.form-button:hover {
+  background: linear-gradient(90deg, #9488c3 0%, #d5cdf8 100%);
+}
+
+/* налаштування оцінки послуг */
+
+.label-select {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	padding-left: 42px;
+}
+
+
+
+.select {
+  width: 100px;
+  color: #ffffff;
+  background-color: #322d45;
+  border-radius: 10px;
+  margin-left: 42px;
+  padding: 4px;
+  border: 1px solid #322d45;
+}
+
+.select__text {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  padding-left: 42px;
+}
+
+
+
+.burger-menu {
+	display: none;
+}
+
+@media ( max-width:1000px) {
+	.container {
+	max-width: 960px;
+	padding: 0 20px;
+	}
+
+	.hydra-footer-inner {
+	padding-top: 122px;
+	}
+
+	.form-inner {
+	padding: 90px 107px 84px 108px;
+	}
+
+	.group-small-label1{
+	flex-wrap: wrap;
+	}
+
+	.small-label1 {
+		width: 49%;
+		max-width: 49%;
+		min-width: 100px;
+	  }
+
+	  .services-list {
+		width: 100%;
+		flex-wrap: wrap;
+	  }
+}
+
+@media ( max-width:900px) {
+
+	.container {
+		max-width: 870px;
+		padding: 0 15px;
+		}
+
+ .hydra-nav-inner {
+	display: none;
+ }
+
+ .burger-menu {
+	display: flex;
+}
+
+.hydra-address-inner img {
+display: none;
+}
+
+.hydra-address-map-list {
+	border: none;
+}
+
+.hydra-address-map-list2{
+	border: none;
+}
+
+.hydra-footer-inner {
+	padding-top: 122px;
+	}
+
+	.form-inner {
+		padding: 90px 107px 84px 108px;
+		}
+
+		.about-inner {
+			flex-wrap: wrap;
+		}
+}
+
+@media ( max-width:800px) {
+	.container {
+		max-width: 770px;
+		padding: 15px;
+	}
+
+
+.footer-nav{
+	flex-wrap: wrap;
+	column-gap: 39px;
+}
+
+.form-top__text {
+	font-size: 30px;
+}
+
+.introduction-inner {
+	flex-wrap: wrap;
+	gap: 20px;
+}
+}
+
+@media ( max-width:768px) {
+	.container {
+		max-width: 740px;
+		padding: 14px;
+	}
+
+ .hydra-nav-button1 {
+	padding: 11px 34px;
+ }
+
+ .hydra-nav-button {
+	padding: 11px 34px;
+ }
+
+ .hydra__title {
+	font-size: 33px;
+ }
+
+ .header-bottom-left__text{
+	font-size: 12px;
+ }
+
+ .introduction__title {
+	font-size: 24px;
+ }
+
+ .introduction-bottom__text {
+	font-size: 24px;
+ }
+
+ .introduction__text {
+	font-size: 12px;
+ }
+
+ .introduction-arrow {
+	display: none;
+ }
+
+ .about__title {
+	font-size: 24px;
+ }
+
+ .about-bottom__text {
+	font-size: 24px;
+ }
+
+ .about__text {
+	font-size: 12px;
+ }
+
+ .small-label1 {
+	width: 87%;
+	max-width: 87% ;
+ }
+
+ .hydra-address {
+	flex-wrap: wrap;
+	gap: 30px;
+ }
+
+}
+
+@media ( max-width:666px) {
+
+	.container {
+		max-width: 630px;
+		padding: 16px;
+	}
+
+	.small-label {
+		width: 87%;
+		max-width: 87%;
+	}
+}
+
+
+@media ( max-width:600px) {
+.hydra-nav-buttons {
+	display: none;
+
+}
+
+.hydra-address-inner img {
+	display: flex;
+}
+
+.header-bottom{
+	flex-direction: column;
+}
+
+}
+
+@media ( max-width:520px) {
+	.container {
+		max-width: 500px;
+		padding: 10px;
+	}
+
+	.header-bottom-right {
+		width: 360px;
+	}
+}
+
+@media ( max-width:480px) {
+	.container {
+		max-width: 460px;
+		padding: 10px;
+	}
 }
