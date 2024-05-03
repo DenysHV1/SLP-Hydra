@@ -430,6 +430,57 @@
           </ul>
         </div>
       </section>
+	  <!-- form -->
+	  <section class="hydra-form">
+		<div class="container form-inner">
+			<h2 class="form__title">
+				JOIN HYDRA
+			</h2>
+			<img class="form-vector16" src="images/Vector 16.png">
+			<p class="form-top__text">
+				Let’s Build Your VR Experience
+			</p>
+			<form action="info/" method="post" enctype="multipart/form-data" name="hydra-main-form" class="main-form" autocomplete="on">
+				<input type="text" class="small-input" tabindex="1" placeholder="First Name" autofocus>
+				<input type="text" class="small-input" tabindex="2" placeholder="Last Name">
+				<input type="email" class="small-input" tabindex="3" placeholder="Email">
+				<input type="number" class="small-input" tabindex="4" placeholder="Phone Number">
+				<label class="label-subject" for="subject">
+					<span class="label__text"> Subject</span>
+					<input type="text" id="subject" class="form-subject" tabindex="5" placeholder="man/woman">
+				</label>
+				<label class="label-subject" for="textarea">
+					<span class="label__text">How are you?</span>
+					<textarea rows="10" id="textarea" tabindex="6" class="form-textarea" placeholder="Tell Us Something..."></textarea>
+					<p class="select__text">How many points for our services?</p>
+					<select class="select" name="How many points for our services?">
+						<optgroup label="nooooo">
+							<option value="1">
+								&#x2605;
+							</option value="2">
+							<option>
+								&#x2605;&#x2605;
+							</option>
+							<optgroup label="why?">
+								<option value="3">
+									&#x2605;&#x2605;&#x2605;
+								</option>
+							</optgroup>
+						</optgroup>
+						<optgroup label="good">
+							<option value="4">
+								&#x2605;&#x2605;&#x2605;&#x2605;
+							</option>
+							<option selected value="5">
+								&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
+							</option>
+						</optgroup>
+					</select>
+				</label>
+				<button type="submit" class="form-button" tabindex="7">SEND TO HYDRA</button>
+			</form>
+		</div>
+	  </section>
     </main>
     <!-- ~~~~~~~~~~~~~~~~~Footer~~~~~~~~~~~~~~~~~~ -->
     <footer class="hydra-footer">
