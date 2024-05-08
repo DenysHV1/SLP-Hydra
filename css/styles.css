@@ -1,4 +1,7 @@
 /* \\\\\\\\\\\Общие стили\\\\\\\\\\\ */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -47,6 +50,7 @@ h6 {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 input {
@@ -60,7 +64,6 @@ input {
 /* секція хедера */
 .hydra-header {
   padding: 50px 0 90px 0;
-  overflow-x: clip;
   width: 100%;
   background-image: url(../images/Vector\ 1.png), url(../images/Vector\ 2.png),
     url(../images/Vector\ 3.png), url(../images/Vector\ 4.png);
@@ -90,32 +93,6 @@ input {
   align-items: center;
 }
 
-.header-logo1 {
-  fill: url(#paint0_linear_1_5);
-  width: 103px;
-  height: 103px;
-  transition-property: fill;
-  transition-timing-function: linear;
-  transition-duration: 300ms;
-}
-
-.header-logo1:hover {
-  fill: #72c9ff;
-}
-
-.header-logo2 {
-  fill: url(#paint0_linear_1_5);
-  width: 76px;
-  height: 46px;
-  transition-property: fill;
-  transition-timing-function: linear;
-  transition-duration: 300ms;
-}
-
-.header-logo2:hover {
-  fill: #72c9ff;
-}
-
 /* список в навігації */
 .hydra-nav-inner {
   display: flex;
@@ -139,8 +116,6 @@ input {
   color: #72c9ff;
   font-weight: 900;
 }
-
-/* Navigation */
 
 /* '''''''''''''''Buttons'''''''''''''' */
 .hydra-nav-buttons {
@@ -170,7 +145,6 @@ input {
 }
 
 .hydra-nav-button1:hover {
-  /* padding: 18px 35px; */
   background-image: linear-gradient(90deg, #685e8e 0%, #8e87ac 100%);
   transform: scale(1.1);
 }
@@ -217,13 +191,8 @@ input {
 .hydra-nav-button__href:hover {
   color: #343045;
 }
-/* """""""""""""""""""друга кнопка""""""""""""""""""""" */
 
-/* '''''''''''''''Buttons'''''''''''''' */
-
-/* ~~~~~~~~~~header-bottom~~~~~~~~~ */
-
-/* /////////header-bottom-left//////// */
+/* /////////header-bottom-left//////////////////////////////// */
 .header-bottom {
   display: flex;
   justify-content: space-between;
@@ -235,20 +204,16 @@ input {
   display: flex;
   flex-direction: column;
   align-items: start;
+  width: 40%;
+  min-width: 280px;
 }
 
 .hydra__title {
   font-weight: 700;
   font-size: 46px;
-  background: linear-gradient(156deg);
   color: #fff;
   max-width: 456px;
   margin-bottom: 36px;
-}
-
-.h1-span {
-  color: linear-gradient(156deg, grey, white); /*  ????? */
-  background-clip: text;
 }
 
 .header-bottom-left__text {
@@ -283,28 +248,14 @@ input {
   background-image: linear-gradient(90deg, #a594e6 0%, #e3ddfe 100%);
 }
 
-.arrow {
-  width: 100px;
-  height: 100px;
-  stroke: #c0b7e8;
-  transition-property: padding, stroke, transform;
-  transition-timing-function: linear;
-  transition-duration: 600ms;
-  transition-delay: 0s;
-}
-
-.arrow:hover {
-  padding-left: 10px;
-  stroke: #00a3f5;
-  transform: rotate(-180deg);
-}
-
-/* /////////header-bottom-left//////// */
-
 /* /////////header-bottom-right//////// */
 
 .header-bottom-right {
-  width: 490px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
 }
 
 .header-bottom-right__img {
@@ -317,7 +268,7 @@ input {
   transform: scale(1.3);
 }
 
-/* /////////header-bottom-right//////// */
+/* address */
 
 .hydra-address {
   display: flex;
@@ -403,13 +354,15 @@ input {
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 28%, 50% -115%;
   background-size: auto, auto;
+  width: 100%;
+  padding-top: 122px;
+  padding-bottom: 59px;
 }
 
 .hydra-footer-inner {
   display: flex;
   flex-direction: column;
-  padding-top: 122px;
-  padding-bottom: 59px;
+  justify-content: center;
 }
 
 .footer-nav {
@@ -422,20 +375,18 @@ input {
 .logo-footer {
   max-width: 100%;
   flex-shrink: 0;
-}
-
-.line-for-footter {
-  max-height: 100%;
+  min-width: 200px;
 }
 
 .footer-nav-list {
   display: flex;
   flex-direction: column;
   padding: 0;
-  align-self: self-start;
+  align-self: flex-start;
   gap: 25px;
-  padding: 0;
+  padding-left: 10px;
   margin: 0;
+  min-width: 200px;
 }
 
 .footer-list-item {
@@ -454,6 +405,8 @@ input {
   display: flex;
   flex-direction: column;
   align-items: start;
+  padding-left: 10px;
+  min-width: 300px;
 }
 
 .socials-text {
@@ -469,14 +422,6 @@ input {
   padding: 0;
   margin-bottom: 26px;
 }
-
-/* .icon-list-item {
-	display: flex;
-}
-
-.icon-list-item__href {
-	display: flex;
-} */
 
 .icon-socials {
   display: flex;
@@ -498,11 +443,14 @@ input {
   letter-spacing: 0.13em;
   color: #fff;
 }
-/* <!-- ~~~~~~~~~~~~~~~~~Footer~~~~~~~~~~~~~~~~~~ --> */
 
 /* <!-- ~~~~~~~~~~~~~~~~~Main~~~~~~~~~~~~~~~~~~ --> */
 /* <!-- //////////introduction////////// --> */
 /* <!-- ///////////why build////////// --> */
+.introduction {
+  width: 100%;
+}
+
 .introduction-inner {
   display: flex;
   align-items: center;
@@ -514,7 +462,8 @@ input {
   flex-direction: column;
   align-items: start;
   gap: 10px;
-  width: 500px;
+  width: 40%;
+  min-width: 375px;
   position: relative;
   flex-shrink: 0;
 }
@@ -550,7 +499,8 @@ input {
   font-weight: 400;
   font-size: 16px;
   color: #fff;
-  max-width: 652px;
+  width: 60%;
+  min-width: 375px;
 }
 
 /* <!-- //////////ABOUT////////// --> */
@@ -561,6 +511,7 @@ input {
   background-repeat: no-repeat, no-repeat;
   background-size: contain, contain;
   background-position: 50% 68%, 50% 15%;
+  width: 100%;
 }
 .about-inner {
   display: flex;
@@ -569,8 +520,12 @@ input {
   gap: 20px;
 }
 
+.about-img-container {
+  width: 40%;
+  min-width: 330px;
+}
+
 .about__img {
-  max-width: 100%;
   transition: transform 300ms linear 0s;
 }
 
@@ -582,6 +537,8 @@ input {
   display: flex;
   flex-direction: column;
   align-items: start;
+  width: 60%;
+  min-width: 350px;
 }
 
 .about-inner-title {
@@ -619,19 +576,18 @@ input {
   height: 48px;
   background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
 }
-/* <!-- //////////ABOUT////////// --> */
 
 /* <!-- ///////////////services//////////////// --> */
 
 .services {
   padding-top: 102px;
   width: 100%;
-  overflow-x: auto;
 }
 
 .services-inner {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 11px;
 }
 
@@ -646,18 +602,16 @@ input {
   gap: 11px;
   padding: 0;
   margin: 0;
-  overflow: auto;
-  max-width: 100%;
 }
 
 .services-list-cart {
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 40px;
   background-image: radial-gradient(rgb(51, 45, 67), rgb(26, 24, 40));
   padding: 37.44px 35px 40px 25px;
-  min-width: 24%
 }
 
 .services-list-cart__img {
@@ -694,31 +648,6 @@ input {
   cursor: pointer;
 }
 
-.services-button-left {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.services-button-right {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 /* <!-- ///////////////services//////////////// --> */
 
 /* <!-- ///////////////FORM//////////////// --> */
@@ -726,7 +655,6 @@ input {
 /* верхня частина форми з заголовком і текстом */
 .hydra-form {
   width: 100%;
-
   margin-top: 112px;
 }
 
@@ -789,9 +717,6 @@ textarea:placeholder-shown {
   max-width: 43.5%;
   min-width: 220px;
   gap: 10px;
-}
-
-.small-label__text {
   padding-left: 42px;
   font-weight: 400;
   font-size: 20px;
@@ -838,104 +763,96 @@ textarea:placeholder-shown {
 
 /* налаштування перших 4-х інпутів */
 
-
-
 /* налаштування групи малих інпутів */
-.group-small-label1{
-	display: flex;
-	align-items: center;
-	justify-content:start;
-	gap: 39px 10px;
-	width: 87.5%;
+.group-small-label1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 39px 10px;
+  width: 87.5%;
 }
 
-
 .small-label1 {
-	display: flex;
-	flex-direction: column;
-	align-items: start;
-	width: 32.6%;
-	max-width: 43.5%;
-	min-width: 220px;
-	gap: 10px;
-  }
-  
-  .small-label__text1 {
-	padding-left: 42px;
-	font-weight: 400;
-	font-size: 20px;
-	color: #fff;
-  }
-  
-  .small-input1 {
-	border: 2px solid #13ff17;
-	border-radius: 40px;
-	width: 100%;
-	max-width: 100%;
-	min-width: 10%;
-	height: 72px;
-	background-color: transparent;
-	color: #fff;
-	padding-left: 42px;
-	padding-right: 42px;
-	transition: border-color 150ms ease-in-out;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 32.6%;
+  max-width: 43.5%;
+  min-width: 220px;
+  gap: 10px;
+  padding-left: 42px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
 
-  .small-input-data {
-	border: 2px solid #fff;
-	border-radius: 40px;
-	width: 100%;
-	max-width: 100%;
-	min-width: 220px;
-	height: 72px;
-	background-color: transparent;
-	color: #fff;
-	padding-left: 42px;
-	padding-right: 42px;
-	transition: border-color 150ms ease-in-out;
-	cursor: pointer;
-  }
+.small-input1 {
+  border: 2px solid #13ff17;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 10%;
+  height: 72px;
+  background-color: transparent;
+  color: #fff;
+  padding-left: 42px;
+  padding-right: 42px;
+  transition: border-color 150ms ease-in-out;
+}
 
+.small-input-data {
+  border: 2px solid #fff;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 220px;
+  height: 72px;
+  background-color: transparent;
+  color: #fff;
+  padding-left: 42px;
+  padding-right: 42px;
+  transition: border-color 150ms ease-in-out;
+  cursor: pointer;
+}
 
-  
-  .small-input1::placeholder {
-	font-family: inherit;
-	font-weight: 400;
-	font-size: 14px;
-	color: #fff;
-	opacity: 0.5;
-  }
-  
-  .small-input1 .small-input-data:hover {
-	background: radial-gradient(
-	  50% 50% at 50% 50%,
-	  rgb(81, 74, 120) 0%,
-	  rgb(50, 45, 69) 100%
-	);
-  }
-  
-  .small-input1 .small-input-data:focus {
-	background: radial-gradient(
-	  50% 50% at 50% 50%,
-	  rgb(81, 74, 120) 0%,
-	  rgb(50, 45, 69) 100%
-	);
-  }
+.small-input1::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.5;
+}
 
+.small-input1 .small-input-data:hover {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(81, 74, 120) 0%,
+    rgb(50, 45, 69) 100%
+  );
+}
 
-
-
+.small-input1 .small-input-data:focus {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(81, 74, 120) 0%,
+    rgb(50, 45, 69) 100%
+  );
+}
 
 /* налаштування текстового поля */
 
 .label-textarea {
-	display: flex;
-	flex-direction: column;
-	width: 87.5%;
-	min-width: 400px;
-	max-width: 87.5%;
-	gap: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 87.5%;
+  min-width: 400px;
+  max-width: 87.5%;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  padding-left: 42px;
+}
 
 .form-textarea {
   border: 2px solid #13ff17;
@@ -982,7 +899,7 @@ textarea:placeholder-shown {
   font-weight: 700;
   font-size: 12px;
   color: #343045;
-  cursor: pointer;
+  cursor: grab;
 }
 
 .form-button:focus {
@@ -996,14 +913,16 @@ textarea:placeholder-shown {
 /* налаштування оцінки послуг */
 
 .label-select {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	width: 100%;
-	padding-left: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding-left: 42px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  padding-left: 42px;
 }
-
-
 
 .select {
   width: 100px;
@@ -1013,221 +932,213 @@ textarea:placeholder-shown {
   margin-left: 42px;
   padding: 4px;
   border: 1px solid #322d45;
+  cursor: zoom-in;
 }
 
-.select__text {
-  font-weight: 400;
-  font-size: 20px;
-  color: #fff;
-  padding-left: 42px;
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
-
-
 
 .burger-menu {
-	display: none;
+  display: none;
 }
 
-@media ( max-width:1000px) {
-	.container {
-	max-width: 960px;
-	padding: 0 20px;
-	}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 960px;
+    padding: 0 20px;
+  }
 
-	.hydra-footer-inner {
-	padding-top: 122px;
-	}
+  .hydra-nav-inner {
+    display: none;
+  }
 
-	.form-inner {
-	padding: 90px 107px 84px 108px;
-	}
+  .burger-menu {
+    display: flex;
+  }
 
-	.group-small-label1{
-	flex-wrap: wrap;
-	}
+  .form-inner {
+    padding: 90px 107px 84px 108px;
+  }
 
-	.small-label1 {
-		width: 49%;
-		max-width: 49%;
-		min-width: 100px;
-	  }
+  .group-small-label1 {
+    flex-wrap: wrap;
+  }
 
-	  .services-list {
-		width: 100%;
-		flex-wrap: wrap;
-	  }
+  .small-label1 {
+    width: 49%;
+    max-width: 49%;
+    min-width: 100px;
+  }
+
+  .services-list {
+    flex-wrap: wrap;
+  }
+
+  .logo-footer {
+    display: none;
+  }
+
+  .line-footer {
+    display: none;
+  }
 }
 
-@media ( max-width:900px) {
+@media (max-width: 768px) {
+  .container {
+    max-width: 740px;
+    padding: 14px;
+  }
 
-	.container {
-		max-width: 870px;
-		padding: 0 15px;
-		}
+  .footer-nav {
+    flex-wrap: wrap;
+    column-gap: 39px;
+  }
 
- .hydra-nav-inner {
-	display: none;
- }
+  .form-top__text {
+    font-size: 30px;
+  }
 
- .burger-menu {
-	display: flex;
+  .hydra-nav-button1 {
+    padding: 11px 34px;
+  }
+
+  .hydra-nav-button {
+    padding: 11px 34px;
+  }
+
+  .hydra__title {
+    font-size: 33px;
+  }
+
+  .header-bottom-left__text {
+    font-size: 12px;
+  }
+
+  .introduction__title {
+    font-size: 24px;
+  }
+
+  .introduction-bottom__text {
+    font-size: 24px;
+  }
+
+  .introduction-inner {
+    justify-content: center;
+  }
+
+  .introduction__text {
+    font-size: 12px;
+  }
+
+  .introduction-arrow {
+    display: none;
+  }
+
+  .about-inner {
+    flex-direction: column;
+  }
+
+  .about__title {
+    font-size: 24px;
+  }
+
+  .about-bottom__text {
+    font-size: 24px;
+  }
+
+  .about__text {
+    font-size: 12px;
+  }
+
+  .small-label1 {
+    width: 87%;
+    max-width: 87%;
+  }
+
+  .hydra-address {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .hydra-address-map-list2 {
+    border: none;
+  }
+
+  .hydra-address-map-list3 {
+    border: none;
+  }
+
+  .hydra-address-map-list {
+    border: none;
+  }
+
+  .introduction-inner {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .logo-footer {
+    display: flex;
+  }
+
+  .line-footer {
+    display: flex;
+  }
 }
 
-.hydra-address-inner img {
-display: none;
+@media (max-width: 666px) {
+  .container {
+    max-width: 630px;
+    padding: 16px;
+  }
+
+  .small-label {
+    width: 87%;
+    max-width: 87%;
+  }
 }
 
-.hydra-address-map-list {
-	border: none;
+@media (max-width: 600px) {
+  .hydra-nav-buttons {
+    display: none;
+  }
+
+  .hydra-address-inner img {
+    display: flex;
+  }
+
+  .header-bottom {
+    flex-direction: column;
+  }
+
+  .header-bottom-right {
+    order: -1;
+    margin-bottom: 30px;
+    min-width: 350px;
+  }
+
+  .header-bottom-left {
+    min-width: 350px;
+  }
 }
 
-.hydra-address-map-list2{
-	border: none;
+@media (max-width: 520px) {
+  .container {
+    max-width: 500px;
+    padding: 10px;
+  }
+
+  .header-bottom-right {
+    width: 360px;
+  }
 }
 
-.hydra-footer-inner {
-	padding-top: 122px;
-	}
-
-	.form-inner {
-		padding: 90px 107px 84px 108px;
-		}
-
-		.about-inner {
-			flex-wrap: wrap;
-		}
+@media (max-width: 480px) {
+  .container {
+    max-width: 460px;
+    padding: 10px;
+  }
 }
-
-@media ( max-width:800px) {
-	.container {
-		max-width: 770px;
-		padding: 15px;
-	}
-
-
-.footer-nav{
-	flex-wrap: wrap;
-	column-gap: 39px;
-}
-
-.form-top__text {
-	font-size: 30px;
-}
-
-.introduction-inner {
-	flex-wrap: wrap;
-	gap: 20px;
-}
-}
-
-@media ( max-width:768px) {
-	.container {
-		max-width: 740px;
-		padding: 14px;
-	}
-
- .hydra-nav-button1 {
-	padding: 11px 34px;
- }
-
- .hydra-nav-button {
-	padding: 11px 34px;
- }
-
- .hydra__title {
-	font-size: 33px;
- }
-
- .header-bottom-left__text{
-	font-size: 12px;
- }
-
- .introduction__title {
-	font-size: 24px;
- }
-
- .introduction-bottom__text {
-	font-size: 24px;
- }
-
- .introduction__text {
-	font-size: 12px;
- }
-
- .introduction-arrow {
-	display: none;
- }
-
- .about__title {
-	font-size: 24px;
- }
-
- .about-bottom__text {
-	font-size: 24px;
- }
-
- .about__text {
-	font-size: 12px;
- }
-
- .small-label1 {
-	width: 87%;
-	max-width: 87% ;
- }
-
- .hydra-address {
-	flex-wrap: wrap;
-	gap: 30px;
- }
-
-}
-
-@media ( max-width:666px) {
-
-	.container {
-		max-width: 630px;
-		padding: 16px;
-	}
-
-	.small-label {
-		width: 87%;
-		max-width: 87%;
-	}
-}
-
-
-@media ( max-width:600px) {
-.hydra-nav-buttons {
-	display: none;
-
-}
-
-.hydra-address-inner img {
-	display: flex;
-}
-
-.header-bottom{
-	flex-direction: column;
-}
-
-}
-
-@media ( max-width:520px) {
-	.container {
-		max-width: 500px;
-		padding: 10px;
-	}
-
-	.header-bottom-right {
-		width: 360px;
-	}
-}
-
-@media ( max-width:480px) {
-	.container {
-		max-width: 460px;
-		padding: 10px;
-	}
-}
-
-
