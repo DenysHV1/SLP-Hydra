@@ -1,3 +1,1 @@
-# GLP-Hydra
-
-GLP - group lending project
+🏁SLP - solo lending project🏁
