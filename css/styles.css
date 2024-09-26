@@ -31,10 +31,6 @@ dt {
   margin: 0;
 }
 
-.main-content {
-  /* overflow-x: clip; */
-}
-
 p {
   margin: 0;
 }
@@ -126,7 +122,6 @@ input {
   top: 0;
 }
 
-/* //////додатковий селектор для розміру/////// */
 .button-for-header {
   flex-shrink: 0;
   width: calc((102% - 38px) / 2);
@@ -500,7 +495,7 @@ input {
   font-size: 16px;
   color: #fff;
   width: 60%;
-  min-width: 375px;
+  min-width: 320px;
 }
 
 /* <!-- //////////ABOUT////////// --> */
@@ -845,7 +840,6 @@ textarea:placeholder-shown {
   display: flex;
   flex-direction: column;
   width: 87.5%;
-  min-width: 400px;
   max-width: 87.5%;
   gap: 10px;
   font-weight: 400;
@@ -1122,6 +1116,12 @@ fieldset {
 
   .header-bottom-left {
     min-width: 350px;
+  }
+
+  .hydra-header {
+    padding: 50px 0 90px 0;
+    width: 100%;
+    background-image: none;
   }
 }
 
